@@ -178,7 +178,14 @@ blockquote > #opsL{text-align:right;font-size:12px;font-weight:400;line-height:0
      <p id="ketgeser">nhấn vào dưới trái tim <br>🤍</br>  </p>
 
      <div><blockquote id='bq'>
+      
        <p id="halo" class="halo"></p>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <p id="haloo" class="haloo"></p>
        <p id="kalimat"></p>
        
        <p id="pesanAkhir" class="gaya4"></p>
@@ -312,6 +319,8 @@ blockquote > #opsL{text-align:right;font-size:12px;font-weight:400;line-height:0
   function mulaiketik3(){
   halo.innerHTML="";
   halo.classList.add("gaya4");
+  haloo.innerHTML="";
+  haloo.classList.add("gaya4");
   ftganti=10;ftmuncul();
   //StartMarqueeL();
   new TypeIt("#halo", {
@@ -322,7 +331,16 @@ blockquote > #opsL{text-align:right;font-size:12px;font-weight:400;line-height:0
     setInterval(berjatuhan,300);
     //mulaiketikA();
   },}).go();
+  new TypeIt("#haloo", {
+  strings: ['<a href="https://123giabao.github.io/giaima/">cách giải mã ở đây</a>'], startDelay: 50, speed: 50, cursor: false,
+  afterComplete: function(){
+    haloo.style.animation="rto .8s infinite alternate";
+    fotostiker.style.animation="rto .8s infinite alternate";
+    setInterval(berjatuhan,300);
+    //mulaiketikA();
+  },}).go();
   }
+  
   
   function mulaiketikA(){
   pesanAkhir.style="position:relative;opacity:1;visibility:visible;transform: scale(1)";
